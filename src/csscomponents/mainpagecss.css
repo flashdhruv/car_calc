@@ -1,0 +1,118 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 500;
+    animation: fadeInAnimation ease 3s;
+    animation-delay: 100ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.Heading {
+    text-shadow: 2px 2px grey;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.calc {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 500;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.paymentnum {
+    text-decoration: solid underline black 2px;
+}
+
+.borders {
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 50px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 50px 100px;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
+}
+
+.grid-container>div {
+    display: grid;
+}
+
+.grid-container>div>label {
+    font-size: x-large;
+    text-align: center;
+    font-weight: 500;
+}
+
+.grid-container>div>label>input {
+    font-size: x-large;
+    margin-top: 15px;
+}
+
+.grid-item1 {
+    grid-row: 1 / span 1;
+    grid-column-end: span 2;
+}
+
+.grid-item2 {
+    grid-row: 2 / span 1;
+    grid-column-end: span 2;
+}
+
+.grid-item3 {
+    grid-row: 1 / span 1;
+    grid-column: 2;
+    grid-column-end: span 2;
+}
+
+.grid-item4 {
+    grid-row: 2 / span 1;
+    grid-column-end: span 2;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+input[type=number] {
+    text-align: center;
+    margin: auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
