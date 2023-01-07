@@ -1,15 +1,52 @@
 .heading {
+    color: white;
+        font-size: 40px;
+        font-weight: 700px;
     display: flex;
     justify-content: center;
-    background-color: aliceblue;
     padding: 30px;
     margin-bottom: 50px;
 }
 
+#carbac {
+    background-image: url(https://bringatrailer.com/wp-content/uploads/2022/05/EAGLE_TALON_TSI-96717-scaled.jpg);
+    justify-items: stretch;
+    background-position: top;
+    background-size: cover;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-height: 60vh;
+    min-height: 40vh;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#overlay {
+    background-image: linear-gradient(to bottom right, #191919, #191919);
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
 .message {
+    font-size: 25px;
     display: flex;
     justify-content: center;
-    font-size: larger;
+    text-shadow: 1px 1px grey;
     font-weight: 500;
     animation: fadeInAnimation ease 3s;
     animation-delay: 100ms;

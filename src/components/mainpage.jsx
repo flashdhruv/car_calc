@@ -38,10 +38,14 @@ const MainPage = () => {
 
     return ( 
     <React.Fragment>
-        
-        <div id="Heading" className="heading">
-            <h1 className='Heading'>Monthly Car Payment Calculator</h1>
-        </div> 
+        <div id='carbac'>
+            <div id='overlay'>
+                <div id="Heading" className="heading">
+                    <h1 className='Heading'>Monthly Car Payment Calculator</h1>
+                </div>
+            </div>
+        </div>
+         
 
         <p  className='message'>Let us help you with the math to give you a peace of mind!</p>
 
